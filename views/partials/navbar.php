@@ -10,8 +10,8 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                         <a href="/" class="<?= urlIs('/') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md px-3 py-2 text-sm font-medium" <?= urlIs('/') ? 'aria-current="page"' : '' ?>>Home</a>
-                        <a href="/about.php" class="<?= urlIs('/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white" <?= urlIs('/about.php') ? 'aria-current="page"' : '' ?>>About</a>
-                        <a href="/contact.php" class="<?= urlIs('/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white" <?= urlIs('/contact.php') ? 'aria-current="page"' : '' ?>>Contact</a>
+                        <a href="/about" class="<?= urlIs('/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white" <?= urlIs('/about') ? 'aria-current="page"' : '' ?>>About</a>
+                        <a href="/contact" class="<?= urlIs('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white" <?= urlIs('/contact') ? 'aria-current="page"' : '' ?>>Contact</a>
                     </div>
                 </div>
             </div>
