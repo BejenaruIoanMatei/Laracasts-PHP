@@ -6,9 +6,12 @@ require 'Database.php';
 
 $config = require 'config.php';
 
-$db = new Database($config);
-$posts = $db->query('select * from notes')->fetchAll();
+$db = new Database($config['database']);
 
-foreach ($posts as $post) {
-    echo '<li>' . $post['body'] . '</li>';
-}
+$id = $_GET['id'];
+
+$query = "select * from notes where id = :id";
+
+$posts = $db->query($query, ['id' => $id])->fetchAll();
+
+dd($posts);
