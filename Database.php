@@ -21,17 +21,17 @@ class Database
         return $this;
     }
 
-    public function get()
+    public function get(): mixed
     {
         return $this->statement->fetchall();
     }
 
-    public function find()
+    public function find(): mixed
     {
         return $this->statement->fetch();
     }
 
-    public function findOrFail()
+    public function findOrFail(): mixed
     {
         $result = $this->find();
         if (! $result)
