@@ -5,7 +5,7 @@
 
 <main>
   <div class="mx-auto max-w-3xl px-4 py-6 sm:px-6 lg:px-8">
-    <form method="POST">
+    <form method="POST" action="/notes">
       <div class="space-y-6">
         <div class="col-span-full">
           <!-- <label for="body" class="block text-sm font-medium text-gray-900">Note</label> -->
