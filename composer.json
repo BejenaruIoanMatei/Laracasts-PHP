@@ -1,0 +1,16 @@
+{
+    "name": "user/laracasts-php",
+    "authors": [
+        {
+            "name": "BejenaruIoanMatei",
+            "email": "bejematei@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
