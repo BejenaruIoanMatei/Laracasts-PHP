@@ -40,29 +40,8 @@ function view($path, $attributes = [])
     require base_path('views/' . $path);
 }
 
-function login($user) {
-    $_SESSION['user'] = [
-        'email' => $user['email']
-    ];
-
-    session_regenerate_id(
-        delete_old_session: true
-    );
-}
-
-function logout(){
-    $_SESSION = [];
-    session_destroy();
-
-    $params = session_get_cookie_params();
-
-    setcookie(
-        name: 'PHPSESSID',
-        value: '',
-        expires_or_options: time() - 3600,
-        path: $params['path'],
-        domain: $params['domain'],
-        secure: $params['secure'],
-        httponly: $params['httponly']
-    );
+function redirect($path)
+{
+    header("location: $path");
+    exit();
 }
